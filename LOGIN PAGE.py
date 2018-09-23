@@ -31,8 +31,7 @@ class LoginFrame(Frame):
         password = self.entry_password.get()
 
         # print(username, password)
-
-        if username == "requests.get("http://35.200.234.5:8090/username/")" and password == "requests.get("http://35.200.234.5:8090/username/password")":
+        if("OK" == str(requests.get("http://35.200.177.225:8099/uname/pass"))): #and (password == requests.get("http://35.200.234.5:8090/username/password"):
             tm.showinfo("Login info", "Welcome")
         else:
             tm.showerror("Login error", "Incorrect username")
